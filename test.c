@@ -232,7 +232,9 @@ static double exact_integral(int which, unsigned dim, const double *xmax) {
 }
 
 #include <ctype.h>
-int main(int argc, char **argv) {
+int main(int __, char **____) {
+  char* argv[] = {"test", "2", "1e-2", "0", "0"};
+  int argc=5;
   double *xmin, *xmax;
   double tol, *val, *err;
   unsigned i, dim, maxEval;
